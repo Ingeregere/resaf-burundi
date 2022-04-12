@@ -1,0 +1,19 @@
+
+.bgNavbar{
+    background-color: gray;
+}
+.linksimatbdi{
+    font-size:15px;
+    font-weight:600;
+
+}
+.titlenavbar{
+    color: #fdc475;
+    text-transform: uppercase;
+    margin-left: 1.5em;
+
+}
+button.borderNavbar.navbar-toggler{
+    color:gray;
+    border-color: gray;
+}
