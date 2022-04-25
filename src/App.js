@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes,Route,Navigate } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+import cookies from 'js-cookie'
 import Activites from './Components/Activites';
 import Apropos from './Components/Apropos';
 import Contribuez from './Components/Contribuez';
@@ -7,17 +9,19 @@ import Home from './Components/Home';
 import Navbars from './Components/Navbar';
 import Partenariat from './Components/Partenariat';
 
-function App() {
+function App(props) {
+  const {t} = useTranslation()
   return (
     <>
         <Router>
           <Navbars />
           <Routes>
-              <Route path='/' exact element={<Home />} /> 
-              <Route path='/apropos' exact element={<Apropos />} /> 
-              <Route path='/activites' exact element={<Activites />} /> 
-              <Route path='/contribuez' exact element={<Contribuez />} /> 
-              <Route path='/partenariat' exact element={<Partenariat />} /> 
+              <Route path={'/'} element={<Home />} />
+              {/* <Route path="/" element={<Navigate replace to={`/${t('a_home_url')}`} />} /> */}
+              <Route path={'a-propos'}  exact element={<Apropos />} /> 
+              <Route path={'activity'} exact element={<Activites />} /> 
+              <Route path={'contribute'} exact element={<Contribuez />} /> 
+              <Route path={'partenariat'} exact element={<Partenariat />} /> 
           </Routes>
           <Footer />
         </Router>

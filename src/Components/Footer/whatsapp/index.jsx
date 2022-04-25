@@ -6,10 +6,11 @@ export default function WhatsappChat() {
 	return (
 		<FloatingWhatsApp
 			phoneNumber={'+25779343813'} 
-			accountName={'EB-COMPANY'}
+			icon
+			accountName={'resaf-burundi'}
 			avatar={'iconwhatsapp.png'}
-			statusMessage={'EB-COMPANY en ligne'}
-			chatMessage={'Bonjour, voulez-vous une de nos applications? contactez-nous,  merci!'}
+			statusMessage={'resaf-burundi en ligne'}
+			chatMessage={'Bonjour, vous avez quelque chose à me parler!'}
 			notification={true}
 			notificationSound={true}
 		/>

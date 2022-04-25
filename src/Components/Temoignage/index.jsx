@@ -1,15 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import './styleTemoignage.css'
-import Slider from "react-slick";
-import { Button, Card, Col,Container } from 'react-bootstrap'
+import { useTranslation } from "react-i18next";
+import {Card, Col,Container,Button } from 'react-bootstrap'
 import slideresaf1 from '../assets/images/slideresaf1.jpg'
 import slideresaf2 from '../assets/images/slideresaf1.jpg'
 import slideresaf3 from '../assets/images/slideresaf1.jpg'
 import slideresaf4 from '../assets/images/slideresaf1.jpg'
+import Slider from "react-slick/lib/slider";
 
 
-export default class Responsive extends Component {
-  render() {
+const Responsive = () =>  {
+  const {t} = useTranslation()
+
     var settings = {
       dots: true,
       infinite: true,
@@ -38,25 +40,25 @@ export default class Responsive extends Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 2,
+            slidesToScroll: 2
           }
         }
       ]
     };
     return (
       <Container className={'temoignage'}>
-         <h3> Quelques temoignages de nos partenariats </h3>
+         <h3>  {t('high_title_testymonie')} </h3>
         <Slider {...settings}>
             <Col md={4}>
             <Card className={'m-2'} >
                 <Card.Img variant="top" src={slideresaf1} />
                 <Card.Body>
-                    <Card.Title> First Testymonie </Card.Title>
+                    <Card.Title> {t('testymony_title1')}  </Card.Title>
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                      {t('testymony_description1')}
                     </Card.Text>
+                    <Button size={'sm'}>{t('btn_partner')}</Button>
                     
                 </Card.Body>
             </Card>
@@ -66,12 +68,11 @@ export default class Responsive extends Component {
             <Card className={'m-2'}>
                 <Card.Img variant="top" src={slideresaf2} />
                 <Card.Body>
-                    <Card.Title>Second Testymonie </Card.Title>
+                    <Card.Title>{t('testymony_title2')} </Card.Title>
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    {t('testymony_description2')}
                     </Card.Text>
-                    
+                    <Button size={'sm'}>{t('btn_partner')}</Button>
                 </Card.Body>
             </Card>
             </Col>
@@ -79,12 +80,12 @@ export default class Responsive extends Component {
             <Card className={'m-2'}>
                 <Card.Img variant="top" src={slideresaf3} />
                 <Card.Body>
-                    <Card.Title>Third Testymonie</Card.Title>
+                    <Card.Title>{t('testymony_title3')}</Card.Title>
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    {t('testymony_description3')}
                     </Card.Text>
-                    
+                    <Button size={'sm'}>{t('btn_partner')}</Button>
+
                 </Card.Body>
             </Card>
             </Col>
@@ -92,12 +93,12 @@ export default class Responsive extends Component {
             <Card className={'m-2'}>
                 <Card.Img variant="top" src={slideresaf4} />
                 <Card.Body>
-                    <Card.Title>Fourth Testymonie</Card.Title>
+                    <Card.Title>{t('testymony_title4')}</Card.Title>
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    {t('testymony_description4')}
                     </Card.Text>
-                    
+                    <Button size={'sm'}>{t('btn_partner')}</Button>
+
                 </Card.Body>
             </Card>
             </Col>
@@ -106,5 +107,5 @@ export default class Responsive extends Component {
         </Slider>
       </Container>
     );
-  }
 }
+export default Responsive

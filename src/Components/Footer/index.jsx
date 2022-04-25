@@ -24,7 +24,7 @@ const Footer = () => {
                                 <Col>
                                 <p className={'text-white descriptionebcompany'}>
                                 © 2022 <span className={'simat-burundi'}>RESAF BURUNDI.{" "}</span>Tous les droits sont réservés. 
-                                <span className={'text-center'}> {" "}Tous les logiciels et thèmes sont développés </span> <span className={"eb-companye"}>par EB-COMPANY </span>
+                                <span className={'text-center'}> {" "} le site web est développé </span> <span className={"eb-companye"}><br/>par EB-COMPANY </span>
                                 </p>
 
                                 </Col>
@@ -41,11 +41,9 @@ const Footer = () => {
                       
                      
                         <Col md={3} sm={12} xs={12}>
-                        <h5 className={' text-uppercase titlefooter'}>Nous contacter </h5>
+                        <h5 className={' text-uppercase titlefooter'}>Me contacter </h5>
                             <ul className="nav flex-column">
-                                <li className="nav-item mb-2 text-white"><MdOutlineMailOutline /> {" "}info@eb-company.com</li>
-                                <li className="nav-item mb-2 text-white"> <MdOutlineMailOutline /> sales@eb-company.com</li>
-                                <li className="nav-item mb-2 text-white"> <ImPhone /> 79 343 813 / 72 415 986</li>
+                                <li className="nav-item mb-2 text-white"> <ImPhone />+257 79 343 415 </li>
                             </ul>
                         </Col>
                     </Row>

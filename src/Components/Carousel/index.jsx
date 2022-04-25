@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import image1 from '../assets/images/image1.png'
+import resafbdipanneausolaire from '../assets/images/resafbdipanneausolaire.png'
 import { Carousel } from 'react-bootstrap';
 
 function HomeCarousel() {
@@ -14,7 +15,7 @@ function HomeCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={image1}
+            src={resafbdipanneausolaire}
             alt="First slide"
           />
           
