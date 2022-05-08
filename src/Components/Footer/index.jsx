@@ -35,7 +35,7 @@ const Footer = () => {
                         <Col md={3} sm={12} xs={12}>
                         <h5 className={' text-uppercase titlefooter'}>Adresse </h5>
                             <ul className="nav flex-column">
-                                <li className="nav-item mb-2 text-white"> <BsHouseDoorFill /> Kabondo avenue Lac RWERU no 7, Bujumbura</li>
+                                <li className="nav-item mb-2 text-white"> <BsHouseDoorFill /> Zone Gitega Urbain,commune Gitega<br/>Rue le triomphe  N<sup>o</sup> 7, Quartier Musinzira</li>
                             </ul>
                         </Col>
                       
