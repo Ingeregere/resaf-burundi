@@ -2,10 +2,10 @@ import React from "react";
 import './styleTemoignage.css'
 import { useTranslation } from "react-i18next";
 import {Card, Col,Container,Button } from 'react-bootstrap'
-import slideresaf1 from '../assets/images/slideresaf1.jpg'
 import slideresaf2 from '../assets/images/slideresaf1.jpg'
-import slideresaf3 from '../assets/images/slideresaf1.jpg'
-import slideresaf4 from '../assets/images/slideresaf1.jpg'
+import slideresaf1 from '../assets/images/resafTestymony1.jpg'
+import slideresaf3 from '../assets/images/resafTestymony2.jpg'
+import slideresaf4 from '../assets/images/resafTestymony3.jpg'
 import Slider from "react-slick/lib/slider";
 
 

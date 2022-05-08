@@ -19,11 +19,11 @@ const Footer = () => {
                                 <Col>
                                 <div>
                                     <img src={logoFooter} alt={"logoimage"}/>
-                                </div>
+                                </div>  
                                </Col>
                                 <Col>
                                 <p className={'text-white descriptionebcompany'}>
-                                © 2022 <span className={'simat-burundi'}>RESAF BURUNDI.{" "}</span>Tous les droits sont réservés. 
+                                © 2022 <span className={'simat-burundi'}>RESAF BURUNDI, Renewable Energy and Sustainable Agro Farming Company SPRL Footer.{" "}</span>Tous les droits sont réservés. 
                                 <span className={'text-center'}> {" "} le site web est développé </span> <span className={"eb-companye"}><br/>par EB-COMPANY </span>
                                 </p>
 
@@ -43,7 +43,7 @@ const Footer = () => {
                         <Col md={3} sm={12} xs={12}>
                         <h5 className={' text-uppercase titlefooter'}>Me contacter </h5>
                             <ul className="nav flex-column">
-                                <li className="nav-item mb-2 text-white"> <ImPhone />+257 79 343 415 </li>
+                                <li className="nav-item mb-2 text-white"> <ImPhone />+257 61 94 93 93 </li>
                             </ul>
                         </Col>
                     </Row>

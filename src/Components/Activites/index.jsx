@@ -27,7 +27,6 @@ export default function HeroSection({}) {
                     <h6>
                           {t('activity_top_subtitle')}
                     </h6>
-                    <p>
                         <ol>
                             <li>
                             {t('activity_1')}  
@@ -53,7 +52,6 @@ export default function HeroSection({}) {
                             </li>
                             <li>
                             {t('activity_8')} 
-
                             </li>
                             <li>
                             {t('activity_9')} 
@@ -61,8 +59,6 @@ export default function HeroSection({}) {
                             </li>
                         </ol>
 
-
-                    </p>
               </div>
                 </Col>
                 <Col md={6}>
