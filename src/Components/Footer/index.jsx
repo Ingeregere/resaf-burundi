@@ -24,7 +24,7 @@ const Footer = () => {
                                 <Col>
                                 <p className={'text-white descriptionebcompany'}>
                                 © 2022 <span className={'simat-burundi'}>RESAF BURUNDI, Renewable Energy and Sustainable Agro Farming Company SPRL Footer.{" "}</span>Tous les droits sont réservés. 
-                                <span className={'text-center'}> {" "} le site web est développé </span> <span className={"eb-companye"}><br/>par EB-COMPANY </span>
+                                <span className={'text-center'}> {" "} le site web est développé par</span> <a href={'https://eb-company.com'} className={'link_ebcompany'} target={'_blank'}><span className={"eb-companye"}> EB-COMPANY </span></a>
                                 </p>
 
                                 </Col>

@@ -7,8 +7,6 @@
     font-weight: 500;
     word-break: break-all;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-
 }
 .titlefooter{
     color: #fdc475;
@@ -24,4 +22,8 @@
 .paddingfooter{
    padding-top: 4em;
    padding-bottom: 2em;
+}
+.link_ebcompany{
+    text-decoration: none;
+    color: white;
 }
